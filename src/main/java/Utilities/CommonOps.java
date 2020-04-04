@@ -1,4 +1,4 @@
-package utilities;
+package Utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import java.util.concurrent.TimeUnit;
 
 public class CommonOps extends Base {
 
@@ -29,6 +31,7 @@ public class CommonOps extends Base {
     public static WebDriver initChromeDriver() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }
 
