@@ -23,6 +23,7 @@ public class CommonOps extends Base {
         else
             throw new RuntimeException("Invalid platform name stated");
 
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.navigate().to("http://automationpractice.com/index.php?controller=authentication&back=my-account");
     }
@@ -31,7 +32,6 @@ public class CommonOps extends Base {
     public static WebDriver initChromeDriver() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }
 

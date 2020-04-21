@@ -6,6 +6,6 @@ public class Base {
 
     public static WebDriver driver;
     public static PageObjects.Authentication firstPageRegistration;
-    public static PageObjects.Authentication secondePageRegistration;
+    public static PageObjects.Authentication secondPageRegistration;
 
 }
