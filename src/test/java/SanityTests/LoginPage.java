@@ -14,10 +14,4 @@ public class LoginPage extends CommonOps {
     public void test02_PersonalInformationPage(){
         NewSign.informationPage("Sapir", "Abargil", "12345678910");
     }
-
-
-
-
-
-
 }
