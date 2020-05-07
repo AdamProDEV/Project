@@ -10,6 +10,7 @@ public class LoginPage extends CommonOps {
     public void test01_FirstRegistration(){
         NewSign.CreateAnAccount("Sapir11@gmail.com");
     }
+
     @Test
     public void test02_PersonalInformationPage(){
         NewSign.informationPage("Sapir", "Abargil", "12345678910");
