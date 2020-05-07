@@ -28,7 +28,7 @@ public class CommonOps extends Base {
         driver.navigate().to("http://automationpractice.com/index.php?controller=authentication&back=my-account");
     }
 
-    //
+
     public static WebDriver initChromeDriver() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
