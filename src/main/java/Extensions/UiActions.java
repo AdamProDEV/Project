@@ -13,6 +13,7 @@ public class UiActions extends CommonOps {
         elem.sendKeys(value);
     }
 
+
 //    public static void updateDropDown (WebElement elem, String value){
 //        Select myValue = new Select(elem);
 //        myValue.deselectByVisibleText(value);
