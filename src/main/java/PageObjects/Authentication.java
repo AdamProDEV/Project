@@ -14,7 +14,7 @@ public class Authentication {
     public WebElement btn_creatAnAccount;
 
     //Site registration
-    @FindBy(id = "id_gender1")
+    @FindBy(id = "uniform-id_gender1")
     public WebElement btn_gender;
 
     @FindBy(id = "customer_firstname")
@@ -24,7 +24,12 @@ public class Authentication {
     public WebElement elem_LastName;
 
     @FindBy(id = "passwd")
-    public WebElement elem_Paswword;
+    public WebElement elem_PassWord;
+
+    @FindBy(id = "days")
+    public WebElement elem_daysOfBirth;
+
+
 
 //    @FindBy(id = "id_gender1")
 //    public WebElement btn_gender;

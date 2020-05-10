@@ -14,9 +14,4 @@ public class UiActions extends CommonOps {
     }
 
 
-//    public static void updateDropDown (WebElement elem, String value){
-//        Select myValue = new Select(elem);
-//        myValue.deselectByVisibleText(value);
-//
-//    }
 }
